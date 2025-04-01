@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   CBSE Results 2025
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+        }
+  </style>
+  <script>
+    function showAprilFool() {
+        event.preventDefault();
+        document.getElementById('resultSection').innerHTML = `
+            <div class='mt-6 text-center bg-yellow-200 p-4 border border-yellow-500 rounded'>
+                <h2 class='text-xl font-bold text-red-600'>😂 April Fool! 😂</h2>
+                <p class='text-lg mt-2'>Congratulations! You passed with 91% 🎉</p>
+                <p class='text-sm text-gray-600'>Enjoy the prank! Have a great day! 😆</p>
+            </div>
+        `;
+    }
+  </script>
+ </head>
+ <body class="bg-white w-full min-h-screen flex flex-col">
+  <div class="w-full border border-gray-300 shadow-md">
+   <div class="text-center w-full">
+    <div class="bg-[#04d4d4] p-4 flex flex-col md:flex-row justify-between items-center w-full">
+     <img alt="CBSE Logo" class="w-16 h-16 md:w-20 md:h-20" src="https://images.seeklogo.com/logo-png/37/1/cbse-logo-png_seeklogo-371643.png"/>
+     <div class="text-center md:text-left flex-1 mx-2">
+      <h1 class="text-xl font-bold text-white">
+       केंद्रीय माध्यमिक शिक्षा बोर्ड
+      </h1>
+      <h2 class="text-lg font-bold text-white">
+       Central Board of Secondary Education
+      </h2>
+     </div>
+     <div class="text-center md:text-right">
+      <a class="text-sm text-white bg-teal-600 px-4 py-2 rounded inline-block" href="http://cbseresults.nic.in">
+       http://cbseresults.nic.in
+      </a>
+     </div>
+    </div>
+    <div class="mt-4 px-4">
+     <h3 class="text-lg font-bold text-blue-800 text-right">
+      Examination Results 2025
+     </h3>
+     <p class="text-sm text-right">
+      Brought to you by National Informatics Centre
+     </p>
+    </div>
+    <div class="mt-6 text-center px-4">
+     <h4 class="text-lg font-bold text-blue-800">
+      Secondary School Examination (Class X) Results 2025
+     </h4>
+     <form class="mt-4 w-full max-w-lg mx-auto" onsubmit="showAprilFool();">
+      <div class="mb-2 text-left">
+       <label class="block" for="rollNumber">
+        Enter your Roll Number
+       </label>
+       <input class="border border-gray-400 p-1 w-full" id="rollNumber" type="text" required/>
+      </div>
+      <div class="mb-2 text-left">
+       <label class="block" for="schoolNumber">
+        Enter School No.
+       </label>
+       <input class="border border-gray-400 p-1 w-full" id="schoolNumber" type="text" required/>
+      </div>
+      <div class="mb-2 text-left">
+       <label class="block" for="admitCardId">
+        Enter Admit Card ID.
+       </label>
+       <input class="border border-gray-400 p-1 w-full" id="admitCardId" type="text" required/>
+       <p class="text-xs text-red-600">
+        (as given on your admit card)
+       </p>
+      </div>
+      <div class="flex justify-center space-x-4 mt-4">
+       <button class="bg-gray-300 px-4 py-2 border border-gray-400" type="submit">
+        Submit
+       </button>
+       <button class="bg-gray-300 px-4 py-2 border border-gray-400" type="reset">
+        Reset
+       </button>
+      </div>
+     </form>
+    </div>
+    <div id="resultSection" class="mt-6"></div>
+    <div class="mt-6 text-left text-xs border-t-2 border-gray-300 pt-2 px-4 w-full">
+     <p>
+      <strong>Disclaimer:</strong> Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on net are for immediate information to the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the Board separately.
+     </p>
+     <p class="mt-2 font-bold text-center">
+      Designed, Developed and Hosted by National Informatics Centre
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
