@@ -3,16 +3,20 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   CBSE Results 2025
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <title>CBSE Results 2025</title>
+  <link rel="icon" href="https://images.seeklogo.com/logo-png/37/1/cbse-logo-png_seeklogo-371643.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
-   body {
-            font-family: Arial, sans-serif;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    footer {
+      margin-top: auto;
+    }
   </style>
   <script>
     function showAprilFool() {
@@ -27,18 +31,14 @@
     }
   </script>
  </head>
- <body class="bg-white w-full min-h-screen flex flex-col">
+ <body class="bg-white w-full flex flex-col min-h-screen">
   <div class="w-full border border-gray-300 shadow-md">
    <div class="text-center w-full">
     <div class="bg-[#04d4d4] p-4 flex flex-col md:flex-row justify-between items-center w-full">
      <img alt="CBSE Logo" class="w-16 h-16 md:w-20 md:h-20" src="https://images.seeklogo.com/logo-png/37/1/cbse-logo-png_seeklogo-371643.png"/>
      <div class="text-center md:text-left flex-1 mx-2">
-      <h1 class="text-xl font-bold text-white">
-       केंद्रीय माध्यमिक शिक्षा बोर्ड
-      </h1>
-      <h2 class="text-lg font-bold text-white">
-       Central Board of Secondary Education
-      </h2>
+      <h1 class="text-xl font-bold text-white">केंद्रीय माध्यमिक शिक्षा बोर्ड</h1>
+      <h2 class="text-lg font-bold text-white">Central Board of Secondary Education</h2>
      </div>
      <div class="text-center md:text-right">
       <a class="text-sm text-white bg-teal-600 px-4 py-2 rounded inline-block" href="http://cbseresults.nic.in">
@@ -91,15 +91,14 @@
      </form>
     </div>
     <div id="resultSection" class="mt-6"></div>
-    <div class="mt-6 text-left text-xs border-t-2 border-gray-300 pt-2 px-4 w-full">
-     <p>
-      <strong>Disclaimer:</strong> Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on net are for immediate information to the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the Board separately.
-     </p>
-     <p class="mt-2 font-bold text-center">
-      Designed, Developed and Hosted by National Informatics Centre
-     </p>
-    </div>
-   </div>
   </div>
+  <footer class="mt-auto text-xs border-t-2 border-gray-300 pt-2 px-4 w-full">
+    <p>
+      <strong>Disclaimer:</strong> Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on net are for immediate information to the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the Board separately.
+    </p>
+    <p class="mt-2 font-bold text-center">
+      Designed, Developed, and Hosted by National Informatics Centre
+    </p>
+  </footer>
  </body>
 </html>
